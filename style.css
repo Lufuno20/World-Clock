@@ -4,7 +4,15 @@
   border: none;
   list-style: none;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body {
   background: linear-gradient(50deg, burlywood, lightsalmon, white);
+}
+h1 {
+  text-align: center;
+  margin: 20px auto;
+}
+footer {
+  text-align: center;
 }
