@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,14 +6,63 @@
   list-style: none;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
 }
 body {
-  background: linear-gradient(50deg, burlywood, lightsalmon, white);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background: linear-gradient(120deg, lightgreen, peachpuff, white);
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: lightgreen;
+  padding: 30px;
+  box-shadow: 0px 7px 30px 0px rgba(100, 100, 111, 0.2);
+  border-radius: 10px;
+  margin: 60px auto;
+}
+select {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 15px;
 }
 h1 {
   text-align: center;
   margin: 20px auto;
+  font-family: "Outfit", serif;
+  font-size: 40px;
+}
+h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 30px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.164);
+}
+.city:last-child {
+  border: none;
+}
+.time {
+  font-size: 35px;
+  font-weight: 700;
+}
+.time small {
+  font-size: 20px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.date {
+  opacity: 0.5;
 }
 footer {
   text-align: center;
+  font-size: 18px;
+  color: darkslategray;
 }
