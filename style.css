@@ -6,7 +6,6 @@
   list-style: none;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  overflow-y: hidden;
 }
 body {
   min-height: 100vh;
@@ -35,9 +34,17 @@ h1 {
   font-family: "Outfit", serif;
   font-size: 40px;
 }
+h1 a {
+  color: slategray;
+}
+h1 span .icon {
+  font-size: 30px;
+}
 h2 {
   margin: 0 0 10px;
   font-size: 25px;
+  color: darkslategrey;
+  text-shadow: 2px 3px rgba(44, 44, 44, 0.2);
 }
 .city {
   display: flex;

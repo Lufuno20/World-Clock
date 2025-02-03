@@ -6,15 +6,19 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
-    <title>Document</title>
+    <title>World Clock</title>
   </head>
   <body>
     <div class="container">
-      <h1>World Clock</h1>
+      <h1>
+        <span class="icon">✈️</span>
+        <a href="index.html">World Clock</a>
+        <span class="icon">🌎</span>
+      </h1>
 
       <select name="" id="city">
         <option value="">Select a country 🗺️</option>
-        <option value="current">Johannesburg</option>
+        <option value="current">Current Location</option>
         <option value="Atlantic/Stanley">Stanley</option>
         <option value="America/Los Angeles">Los Angeles</option>
         <option value="Asia/Tokyo">Tokyo</option>
@@ -32,6 +36,14 @@
         <div class="city" id="Australia">
           <div>
             <h2>Sydney 🇦🇺</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="NewYork">
+          <div>
+            <h2>New York</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>

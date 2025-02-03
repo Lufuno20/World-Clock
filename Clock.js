@@ -23,6 +23,19 @@ function updateTime() {
       "H:mm:ss [<small>]A[</small>]"
     );
   }
+
+  //Korea//
+  let NewYork = document.querySelector("#NewYork");
+  if (NewYork) {
+    let NewYorkDate = NewYork.querySelector(".date");
+    let NewYorkTime = NewYork.querySelector(".time");
+    let NewYorkTimeElement = moment().tz("America/New_York");
+
+    NewYorkDate.innerHTML = moment().format("MMMM  Do YYYY");
+    NewYorkTime.innerHTML = NewYorkTimeElement.format(
+      "H:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updatecity(event) {
@@ -42,7 +55,10 @@ function updatecity(event) {
           <div class="time">${cityTime.format("h:mm:ss")}
            <small>${cityTime.format("A")}</small>
           </div>
-        </div> `;
+          
+        </div> 
+        
+        <a href="index.html">Back to cities</a>`;
 }
 updateTime();
 setInterval(updateTime, 1000);
